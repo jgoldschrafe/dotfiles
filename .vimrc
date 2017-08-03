@@ -33,6 +33,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-syntastic/syntastic'
 
+" Syntax
+Plugin 'robbles/logstash.vim'
+
 " Color schemes
 Plugin 'rainux/vim-desert-warm-256'
 Plugin 'toupeira/vim-desertink'
@@ -71,15 +74,19 @@ endif
 set backspace=indent,eol,start
 set backup
 set backupdir=~/.vim/backup
-set clipboard+=unnamed
 set directory=~/.vim/tmp
 set fileformats=unix,dos,mac
 set hidden
 set iskeyword+=_,$,@,%,#
 set mouse=a
+set cursorline
 set noerrorbells
 set novisualbell
 set whichwrap=b,s,<,>,~,[,]
+
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
 
 " Regular expressions
 set magic
