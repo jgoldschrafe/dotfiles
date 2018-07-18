@@ -18,6 +18,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-bufferline'
 Plugin 'gcmt/taboo.vim'
+Plugin 'hashivim/vim-terraform'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'rbgrouleff/bclose.vim'
@@ -79,7 +80,7 @@ set fileformats=unix,dos,mac
 set hidden
 set iskeyword+=_,$,@,%,#
 set mouse=a
-set cursorline
+set nocursorline
 set noerrorbells
 set novisualbell
 set whichwrap=b,s,<,>,~,[,]
